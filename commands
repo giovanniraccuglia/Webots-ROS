@@ -1,0 +1,14 @@
+#Gmapping
+rosrun gmapping slam_gmapping scan:=/Tiago/Hokuyo_UTM_30LX/laser_scan/layer0 _xmin:=-0.25 _xmax:=0.25 _ymin:=-0.25 _ymax:=0.25  _llsamplerange:=0.01 _llsamplestep:=0.01 _lasamplerange:=0.005 _lasamplestep:=0.005 _particles:=100 _temporalUpdate:=0.5 _resampleThreshold:=0.5 _sigma:=0.05 _delta:=0.5
+
+# Map server - si occupa di salvare la mappa 
+rosrun map_server map_saver
+
+# Map server - Si occupa di dare in stream la mappa
+rosrun map_server map_server _map:=map.yaml
+
+# Localizzazione
+rosrun amcl amcl scan:=/Tiago/Hokuyo_UTM_30LX/laser_scan/layer0
+
+# Visualizzazione
+rosrun rviz rviz -d config.rviz

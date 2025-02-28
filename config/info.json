@@ -1,0 +1,42 @@
+{
+    "goals": [
+        {
+            "x": -1.55,
+            "y": -7,
+            "theta": 0
+        },
+        {
+            "x": 5.70,
+            "y": -16.10,
+            "theta": 1.5708
+        },
+        {
+            "x": 21.30,
+            "y": -15.80,
+            "theta": 1.5708
+        },
+        {
+            "x": 11.30,
+            "y": -6.30,
+            "theta": 1.5708
+        }
+    ],
+    "paintings": [
+        {
+            "nome": "L'urlo",
+            "descrizione": "Chiamato anche Il grido, questo è un celebre dipinto del pittore norvegese Edvard Munch e uno dei quadri più famosi in assoluto. Realizzato nel 1893 su cartone con olio, tempera e pastello, come per altre opere di Munch è stato dipinto in più versioni, quattro in totale. Lo spunto da cui nacque quest’opera è autobiografico; lo stesso Munch così ne parla in una pagina di diario: durante una passeggiata, al tramonto, all’improvviso “… Sentii un urlo attraversare la natura: mi sembrò quasi di udirlo. Dipinsi questo quadro, dipinsi le nuvole come sangue vero.” Da qui i colori allucinati, le figure deformate, il tono fortemente espressionistico dell’insieme."
+        },
+        {
+            "nome": "Notte stellata",
+            "descrizione": "Notte stellata è un dipinto del pittore olandese Vincent van Gogh, realizzato nel 1889. Il dipinto raffigura un paesaggio notturno di Saint-Rémy-de-Provence, poco prima del sorgere del sole. È forse il notturno più celebre tra quelli di Vincent van Gogh. Qui cui il cielo, tra le luci e le spirali delle stelle, sembra sprigionare un’energia cosmica piena di significati simbolici. L’energia sprigionata dagli azzurri, dai blu e dai gialli, e i tocchi ravvicinati del colore contribuiscono a dare all’insieme un effetto mosso e allo stesso tempo sognante, come se le stelle ruotassero."
+        },
+        {
+            "nome": "Il bacio",
+            "descrizione": "Il celebre Bacio è stato realizzato nel 1907-1908 dal pittore austriaco Gustav Klimt. Quest’opera, vero capolavoro dell’arte della Belle Époque, è dipinta in stile liberty, su tela con decorazioni e mosaici con sfondo d’oro. Klimt si è ispirato ai mosaici di Ravenna, che amava molto. L’eleganza delle figure stagliate sul fondo piatto, la preziosità dei loro abiti, l’atmosfera poetica, mistica e sensuale che celebra la fusione dell’uomo e della donna nell’atto dell’abbraccio e del bacio, rendono quest’opera un’icona perfetta della bellezza e dell’amore."
+        },
+        {
+            "nome": "La persistenza della memoria",
+            "descrizione": "Conosciuto anche come Gli orologi molli, è un dipinto ad olio su tela realizzato nel 1931 dal pittore spagnolo Salvador Dalí. Si tratta di un capolavoro della pittura surrealista, dal valore filosofico, metafisico, sicuramente simbolico e assolutamente novecentesco. Il tema, infatti, è proprio il tempo, il suo scorrere in rapporto all’esperienza soggettiva che ne fa l’essere umano e al permanere della memoria. Celebre il soggetto: alcuni grandi orologi, non più oggetti di precisa misurazione matematica ma flessibili e sformati come formaggio fuso, raffigurati sullo sfondo di una terra deserta, forse in attesa che tutto fluisca sul paesaggio della memoria."
+        }
+    ]
+}

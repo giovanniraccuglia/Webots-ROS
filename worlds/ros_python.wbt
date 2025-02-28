@@ -1,0 +1,300 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  info [
+    "Pedestrian Simulation"
+  ]
+  title "Autonomous Vehicle"
+  ERP 0.6
+  FPS 30
+  coordinateSystem "NUE"
+  lineScale 1
+  contactProperties [
+    ContactProperties {
+      softCFM 0.0003
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.0002450045728589948 0.8790764528080436 0.47668074231207075 3.142496309714579
+  position -0.6644437248440922 48.56400879585394 -31.53637775310152
+  near 1
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 30 20
+  floorTileSize 2 2
+  floorAppearance Parquetry {
+    type "light strip"
+    colorOverride 0.533333 0.541176 0.521569
+  }
+}
+Pedestrian {
+  translation -3.27598 1.27 8.84595
+  rotation 0 1 0 -0.7788553071795858
+  name "pedestrian(2)"
+  enableBoundingObject TRUE
+}
+Pedestrian {
+  translation -8.19132 1.27 8.18707
+  rotation 0 1 0 1.05374
+  name "pedestrian(3)"
+  enableBoundingObject TRUE
+}
+Pedestrian {
+  translation -5.11836 1.27 6.84161
+  rotation 0 -1 0 -0.006545307179585791
+  name "pedestrian(4)"
+  enableBoundingObject TRUE
+}
+Wall {
+  translation -15.25 0 0
+  rotation 0 1 0 1.5708
+  name "wall(3)"
+  size 20 3 0.5
+  appearance Roughcast {
+    colorOverride 0.729412 0.741176 0.713725
+    textureTransform TextureTransform {
+    }
+  }
+}
+Wall {
+  translation 5.15 0 8.75
+  rotation 0 1 0 1.5708
+  name "wall(2)"
+  size 2.5 3 0.3
+  appearance Roughcast {
+    colorOverride 0.729412 0.741176 0.713725
+    textureTransform TextureTransform {
+    }
+  }
+}
+Wall {
+  translation 5.15 0 1.1
+  rotation 0 1 0 1.5708
+  name "wall(6)"
+  size 2.5 3 0.3
+  appearance Roughcast {
+    colorOverride 0.729412 0.741176 0.713725
+    textureTransform TextureTransform {
+    }
+  }
+}
+Wall {
+  translation -5.15 0 -4.925
+  rotation 0 1 0 1.5708
+  name "wall(9)"
+  size 10.15 3 0.3
+  appearance Roughcast {
+    colorOverride 0.729412 0.741176 0.713725
+    textureTransform TextureTransform {
+    }
+  }
+}
+Wall {
+  name "wall(7)"
+  size 10 3 0.3
+  appearance Roughcast {
+    colorOverride 0.729412 0.741176 0.713725
+    textureTransform TextureTransform {
+    }
+  }
+}
+Wall {
+  translation 0 0 10.25
+  name "wall(5)"
+  size 31 3 0.5
+  appearance Roughcast {
+    colorOverride 0.729412 0.741176 0.713725
+    textureTransform TextureTransform {
+    }
+  }
+}
+Wall {
+  translation 0 0 -10.25
+  name "wall(4)"
+  size 31 3 0.5
+  appearance Roughcast {
+    colorOverride 0.729412 0.741176 0.713725
+    textureTransform TextureTransform {
+    }
+  }
+}
+Wall {
+  translation 15.25 0 0
+  rotation 0 1 0 1.5708
+  name "wall(1)"
+  size 20 3 0.5
+  appearance Roughcast {
+    colorOverride 0.729412 0.741176 0.713725
+    textureTransform TextureTransform {
+    }
+  }
+}
+TiagoIron {
+  translation -12 0.095 -7.5
+  controller "ros"
+  controllerArgs [
+    "--name=Tiago"
+  ]
+  cameraSlot [
+    RangeFinder {
+      rotation 0 1 0 -1.5708
+      width 200
+      height 100
+      maxRange 3
+    }
+    Speaker {
+      rotation 0 1 0 -1.5708
+    }
+    Camera {
+      rotation 0 1 0 -1.5708
+      fieldOfView 1.2
+      width 640
+      height 480
+      antiAliasing TRUE
+    }
+  ]
+  lidarSlot [
+    HokuyoUtm30lx {
+      translation 0 0.25 0
+    }
+  ]
+}
+PortraitPainting {
+  translation -14.97 1.8 0
+  rotation 0 1 0 1.5708
+  textureUrl [
+    "/home/giovanni/catkin_ws/src/webots_ros/img/Urlo.jpg"
+  ]
+}
+PortraitPainting {
+  translation -5 1.8 9.97
+  rotation 0 1 0 3.14
+  name "portrait painting(1)"
+  textureUrl [
+    "/home/giovanni/catkin_ws/src/webots_ros/img/NotteStellata.jpg"
+  ]
+}
+PortraitPainting {
+  translation 10 1.8 9.97
+  rotation 0 1 0 3.14
+  name "portrait painting(2)"
+  textureUrl [
+    "/home/giovanni/catkin_ws/src/webots_ros/img/Bacio.jpg"
+  ]
+}
+PortraitPainting {
+  translation 0.5 1.8 -0.18
+  rotation 0 1 0 3.14
+  name "portrait painting(3)"
+  textureUrl [
+    "/home/giovanni/catkin_ws/src/webots_ros/img/PersistenzaDellaMemoria.jpg"
+  ]
+}
+PottedTree {
+  translation -13.987 -3.55271e-15 8.79522
+  physics Physics {
+    density -1
+    mass 5
+  }
+}
+PottedTree {
+  translation 2.87272 -3.09086e-13 8.95009
+  name "potted tree(1)"
+  physics Physics {
+    density -1
+    mass 5
+  }
+}
+PottedTree {
+  translation -4.11369 -2.94876e-13 -1.15592
+  name "potted tree(2)"
+  physics Physics {
+    density -1
+    mass 5
+  }
+}
+PottedTree {
+  translation 5.981 -3.2685e-13 0.912316
+  name "potted tree(3)"
+  physics Physics {
+    density -1
+    mass 5
+  }
+}
+FloorLight {
+  translation 13 1.42109e-14 -8
+  pointLightIntensity 6
+  physics Physics {
+    density -1
+    mass 5
+  }
+}
+FloorLight {
+  translation -7 1.42109e-14 -8
+  name "floor light(2)"
+  pointLightIntensity 6
+  physics Physics {
+    density -1
+    mass 5
+  }
+}
+FloorLight {
+  translation 13 1.42109e-14 8
+  name "floor light(1)"
+  pointLightIntensity 6
+  physics Physics {
+    density -1
+    mass 5
+  }
+}
+Pedestrian {
+  translation -11.5475 1.27 -1.2751
+  rotation 0 -1 0 1.19773
+  enableBoundingObject TRUE
+}
+Pedestrian {
+  translation 12.5851 1.27 -2.18982
+  rotation 0 -1 0 1.45953
+  name "pedestrian(5)"
+  enableBoundingObject TRUE
+}
+Pedestrian {
+  translation 11.188 1.27 -3.4674
+  rotation 0 1 0 0.111266
+  name "pedestrian(6)"
+  enableBoundingObject TRUE
+}
+Pedestrian {
+  translation 10.292 1.27 -1.5109
+  rotation 0 1 0 1.94386
+  name "pedestrian(10)"
+  enableBoundingObject TRUE
+}
+Pedestrian {
+  translation -0.526413 1.27 -3.43286
+  rotation 0 1 0 0.111264
+  name "pedestrian(8)"
+  enableBoundingObject TRUE
+}
+Pedestrian {
+  translation 2.30354 1.27 -2.78032
+  rotation 0 1 0 -0.9359353071795864
+  name "pedestrian(9)"
+  enableBoundingObject TRUE
+}
+Pedestrian {
+  translation 11.7077 1.27 -0.379409
+  rotation 0 1 0 -3.030325307179586
+  name "pedestrian(7)"
+  enableBoundingObject TRUE
+}
+Pedestrian {
+  translation -12.6059 1.27 2.24803
+  rotation 0 1 0 -2.506725307179586
+  name "pedestrian(1)"
+  enableBoundingObject TRUE
+}
